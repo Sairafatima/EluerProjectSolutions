@@ -1,0 +1,40 @@
+
+package tutorials;
+import java.util.ArrayList;
+public class Tutorials {
+    public static void main(String[] args) {
+        
+        ArrayList<Long> prime_factors=new ArrayList<Long>(); //temporary array to hold 3 values:first two will sum to get 3rd one
+        Long i=600851475143L;
+        Long counter=2L;
+        Long largest_prime_factor=2L;
+        Long check=2L; 
+        boolean prime_flag=false;
+        
+        
+        while (counter<(i/2)){
+            prime_flag=false;          
+            check=2L;
+            
+            if (i%counter==0){
+                prime_flag=true;              
+            }
+            
+           while(check<counter){
+               if(counter%check==0){
+               prime_flag=false;
+               }
+               check+=1;        
+            }
+           
+            if(prime_flag){
+            largest_prime_factor=counter;
+            System.out.println(counter);
+            prime_factors.add(counter);
+            }                
+            counter+=1;
+        }
+              
+        System.out.println(largest_prime_factor);
+        
+    }
