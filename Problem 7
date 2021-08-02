@@ -1,0 +1,33 @@
+
+package tutorials;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Tutorials {
+    //fuction to a find sum of squared number
+    static boolean check_Prime(int number){
+        
+        boolean flag=true;
+        for (int i=2;i<number;i++){
+            if(number%i==0){
+                flag=false;
+            }
+        }
+    return flag;
+    }
+    
+   
+    public static void main(String[] args) {
+        int check=1;
+        int prime=2;
+        while (check<=10001){
+            if(check_Prime(prime)){
+                
+            check+=1;
+               }
+            prime+=1;
+        }
+       System.out.println(prime-1);
+    }
+                     
+}
