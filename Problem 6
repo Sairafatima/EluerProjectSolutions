@@ -1,0 +1,30 @@
+package tutorials;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Tutorials {
+    //fuction to a find sum of squared number
+    static int sum(int limit){
+        int sum=0;
+        for (int i=0;i<=limit;i++){
+            sum+=i*i;
+        }
+    return sum;
+    }
+    
+    static int square(int limit){
+        int sum=0;
+        for (int i=0;i<=limit;i++){
+        sum+=i;
+        }
+      sum=sum*sum;     
+     return sum ;
+    }
+   
+    public static void main(String[] args) {
+        System.out.println(square(100)-sum(100));
+    }
+                        
+}
+
+      
