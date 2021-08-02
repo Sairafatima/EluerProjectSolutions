@@ -1,0 +1,27 @@
+package tutorials;
+public class Tutorials {
+    public static void main(String[] args) {
+        int[] Temp_Array={0,0,0}; //temporary array to hold 3 values:first two will sum to get 3rd one
+         Temp_Array[0]=1;
+         Temp_Array[1]=2;
+         int sum=0;
+         sum+=Temp_Array[1];
+        for(int i=1;Temp_Array[1]<4000000;i++){
+            
+                Temp_Array[2]=Temp_Array[0]+Temp_Array[1];
+                
+                //checking for even Fibonacci number
+                if (Temp_Array[2]%2==0){
+                    sum+=Temp_Array[2];
+                }  
+                //moving array one step ahead over Fibonacci
+                Temp_Array[0]=Temp_Array[1];              
+                Temp_Array[1]=Temp_Array[2];
+            
+             }
+             System.out.println(sum);
+           }
+        }
+       
+       
+       SOLUTION: 4613732
