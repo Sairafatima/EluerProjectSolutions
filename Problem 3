@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Tutorials {
     public static void main(String[] args) {
         
-        ArrayList<Long> prime_factors=new ArrayList<Long>(); //temporary array to hold 3 values:first two will sum to get 3rd one
+        ArrayList<Long> prime_factors=new ArrayList<Long>(); 
         Long i=600851475143L;
         Long counter=2L;
         Long largest_prime_factor=2L;
